@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>spoil</title>
+    <link th:rel="stylesheet" th:href="style.css">
+</head>
+<body class="bg">
+<header>
+    <nav class="nav">
+        <ul>
+            <li><a class="clickable" th:href="@{/}">Home</a></li>
+            <li><a class="clickable" th:href="@{/analyze}">Search</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <h1 class="home-title">
+        Price Spoiler
+    </h1>
+    <div class="information">
+        <b>
+            <p>
+                We spoil you the next price of top 150<br>
+                coin choose one from here <a class="clickable" th:href="@{/analyze}">Search</a>
+            </p>
+        </b>
+    </div>
+</div>
+</body>
+</html>

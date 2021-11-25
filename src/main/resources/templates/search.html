@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>spoiler</title>
+    <link th:rel="stylesheet" th:href="style.css">
+</head>
+<body class="bg">
+<header>
+    <nav class="nav">
+        <ul>
+            <li><a class="clickable" th:href="@{/}">Home</a></li>
+            <li><a class="clickable" th:href="@{/analyze}">Search</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <div class="middle">
+        <form action="#" th:action="@{/analyze}" th:object="${searchBar}" method="post">
+            <label for="searchBar"></label>
+            <input type="search" th:field="${searchBar.value}" id="searchBar" placeholder="Enter coin name"
+                   class="search search-box">
+            <input type="submit" th:value="Search" style="color: goldenrod" class="search search-btn">
+        </form>
+    </div>
+</section>
+</body>
+</html>
